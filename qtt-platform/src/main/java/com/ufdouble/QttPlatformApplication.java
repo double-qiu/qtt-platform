@@ -15,7 +15,7 @@ public class QttPlatformApplication {
 	
 	@RequestMapping("/")
 	String index() {
-		return "hello spring boot";
+		return "hello spring boot!!!";  
 	}
 	
 }
