@@ -1,4 +1,4 @@
-package com.ufdouble;
+package com.ufdouble.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
