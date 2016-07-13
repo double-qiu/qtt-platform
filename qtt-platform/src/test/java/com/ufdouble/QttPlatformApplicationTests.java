@@ -6,15 +6,15 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import com.ufdouble.application.QttPlatformApplication;
+import com.ufdouble.application.PlatformApplication;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-//@SpringApplicationConfiguration(classes = QttPlatformApplication.class)
-@WebAppConfiguration
+@SpringApplicationConfiguration(classes = PlatformApplication.class)
+//@WebAppConfiguration
 public class QttPlatformApplicationTests {
 
-	/*@Test
+	@Test
 	public void contextLoads() {
-	}*/
+	}
 
 }

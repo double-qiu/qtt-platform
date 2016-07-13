@@ -3,10 +3,13 @@ package com.ufdouble.baseModule.dto;
 
 import com.kcfy.platform.server.kernal.model.JInputModel;
 
-@SuppressWarnings("serial")
 public class BaseUserInVO   implements JInputModel {
 	
-	 private String name;
+	 /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private String name;
 	 private int age;
 	 private String password;
 	 private String sex;
