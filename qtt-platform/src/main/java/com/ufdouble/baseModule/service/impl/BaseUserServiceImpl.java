@@ -1,12 +1,14 @@
 package com.ufdouble.baseModule.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.kcfy.platform.server.kernal.service.ServiceContext;
+import com.kcfy.platform.server.kernal.service.ServiceSupport;
 import com.ufdouble.baseModule.model.BaseUser;
 import com.ufdouble.baseModule.service.BaseUserService;
-
-public class BaseUserServiceImpl implements BaseUserService {
+@Service
+public class BaseUserServiceImpl extends ServiceSupport  implements BaseUserService {
 
 	@Autowired
 	private InternalBaseUserServiceImpl internalBaseUserServiceImpl;

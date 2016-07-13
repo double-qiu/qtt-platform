@@ -11,32 +11,25 @@ import com.kcfy.platform.server.kernal.model.AbstractEntity;
 import com.kcfy.platform.server.kernal.model.JInputModel;
 import com.kcfy.platform.server.kernal.model.JOutputModel;
 
-@SuppressWarnings("serial")
 @Entity
 @Table(name = "base_user")
 public class BaseUser  extends AbstractEntity implements JInputModel, JOutputModel {
-	  @Id
-	  @GeneratedValue(strategy = GenerationType.AUTO)
-	  @Column(name = "id")
-	  private String id;
-	  @Column(name="name", length=200)
-	  private String name;
-	  @Column(name="age", length=8)
-	  private int age;
-	  @Column(name="password", length=200)
-	  private String password;
-	  @Column(name="sex", length=200)
-	  private String sex;
-	  @Column(name="phone", length=200)
-	  private String phone;
-	  @Column(name="email", length=200)
-	  private String email;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+	  /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Column(name="name", length=200)
+	private String name;
+	@Column(name="age", length=8)
+  	private int age;
+	@Column(name="password", length=200)
+	private String password;
+	@Column(name="sex", length=200)
+	private String sex;
+	@Column(name="phone", length=200)
+	private String phone;
+	@Column(name="email", length=200)
+	private String email;
 	public String getName() {
 		return name;
 	}

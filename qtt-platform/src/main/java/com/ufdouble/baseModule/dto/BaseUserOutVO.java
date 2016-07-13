@@ -1,6 +1,12 @@
 package com.ufdouble.baseModule.dto;
 
-public class BaseUserOutVO {
+import com.kcfy.platform.server.kernal.model.JOutputModel;
+
+public class BaseUserOutVO  implements JOutputModel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private String name;
 	private int age;

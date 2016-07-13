@@ -1,6 +1,12 @@
 package com.ufdouble.baseModule.dto;
 
-public class BaseUserUpdateVO {
+import com.kcfy.platform.server.kernal.model.JInputModel;
+
+public class BaseUserUpdateVO implements JInputModel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String id;
 	private String name;
 	private int age;
