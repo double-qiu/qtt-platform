@@ -123,7 +123,7 @@
             <filtering>true</filtering>  
         </resource>    
     </resources>  
-    <finalName>wx-tech-info-platform-web</finalName>
+    <finalName>qtt-platform</finalName>
      <plugins> 
          <!-- 配置加入jetty服务器，开发时我们一般使用jetty服务器 -->  
          <plugin> 

@@ -45,7 +45,7 @@ EmbeddedServletContainerCustomizer,WebApplicationInitializer {
 
     @Override
     public void customize(ConfigurableEmbeddedServletContainer container) {
-    	container.setContextPath("/apisupport");
+    	container.setContextPath("/qtt-platform");
     }
     
     @Bean

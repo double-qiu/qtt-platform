@@ -42,7 +42,7 @@ public class BaseUserTest {
 		System.out.println("Junit Test......");
 	}
 	
-	@Test
+//	@Test
 	public void saveBaseUser() {
 		BaseUserInVO baseUserInVO = new BaseUserInVO();
 		baseUserInVO.setName("double");
@@ -55,7 +55,7 @@ public class BaseUserTest {
 		baseUserController.saveBaseUser(serviceContext, baseUserInVO);
 	}
 	
-	@Test
+//	@Test
 	public void updateBaseUser() {
 		BaseUser baseUser = baseUserService.getBaseUserById(serviceContext, "92f2f6da-a9f2-418a-8e43-905a9816fbdd");
 		BaseUserUpdateVO baseUserUpdateVO = new BaseUserUpdateVO();
@@ -71,7 +71,7 @@ public class BaseUserTest {
 		baseUserController.updateBaseUser(serviceContext, baseUserUpdateVO);
 	}
 	
-	@Test
+//	@Test
 	public void deleteBaseUser() {
 		baseUserController.deleteBaseUserById(serviceContext, "92f2f6da-a9f2-418a-8e43-905a9816fbdd");
 	}
