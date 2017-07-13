@@ -8,9 +8,9 @@
 	
   <display-name>Archetype Created Web Application</display-name>
   
-  	<!-- <filter>
+  	 <filter>
 		<filter-name>encodingFilter</filter-name>
-		<filter-class>com.kcfy.wxtechinfocorpweb.filter.CharacterEncodingFilter</filter-class>
+		<filter-class>com.ufdouble.filter.CharacterEncodingFilter</filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
@@ -20,10 +20,10 @@
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-  	
-  	<filter>
+	
+<!--	<filter>
 		<filter-name>sessionUserFilter</filter-name>
-		<filter-class>com.kcfy.wxtechinfocorpweb.filter.SessionUserFilter</filter-class>
+		<filter-class>com.ufdouble.filter.SessionUserFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>sessionUserFilter</filter-name>
@@ -32,8 +32,24 @@
 	<filter-mapping>
 		<filter-name>sessionUserFilter</filter-name>
 		<url-pattern>*.do</url-pattern>
-	</filter-mapping> -->
-  	
+	</filter-mapping>
+	 <servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.ufdouble.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>logoutServlet</servlet-name>
+		<servlet-class>com.ufdouble.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutServlet</servlet-name>
+		<url-pattern>/logout.do</url-pattern>
+	</servlet-mapping> -->
+	
   	<error-page>
 		<error-code>404</error-code>
 		<location>/pages/errors/404.html</location>
